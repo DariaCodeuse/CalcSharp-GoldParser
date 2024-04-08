@@ -52,13 +52,13 @@ namespace com.calitha.goldparser
         SYMBOL_EOF        =  0, // (EOF)
         SYMBOL_ERROR      =  1, // (Error)
         SYMBOL_WHITESPACE =  2, // Whitespace
-        SYMBOL_MINUS      =  3, // '-'
+        SYMBOL_MINUS      =  3, // '- '
         SYMBOL_LPAREN     =  4, // '('
         SYMBOL_RPAREN     =  5, // ')'
-        SYMBOL_TIMES      =  6, // '*'
-        SYMBOL_DIV        =  7, // '/'
+        SYMBOL_TIMES      =  6, // '* '
+        SYMBOL_DIV        =  7, // '/ '
         SYMBOL_CARET      =  8, // '^'
-        SYMBOL_PLUS       =  9, // '+'
+        SYMBOL_PLUS       =  9, // '+ '
         SYMBOL_10CARET    = 10, // '10^'
         SYMBOL_ENTERO     = 11, // Entero
         SYMBOL_NENTERO    = 12, // NEntero
@@ -72,11 +72,11 @@ namespace com.calitha.goldparser
 
     enum RuleConstants : int
     {
-        RULE_E_PLUS          =  0, // <E> ::= <E> '+' <T>
-        RULE_E_MINUS         =  1, // <E> ::= <E> '-' <T>
+        RULE_E_PLUS          =  0, // <E> ::= <E> '+ ' <T>
+        RULE_E_MINUS         =  1, // <E> ::= <E> '- ' <T>
         RULE_E               =  2, // <E> ::= <T>
-        RULE_T_TIMES         =  3, // <T> ::= <T> '*' <H>
-        RULE_T_DIV           =  4, // <T> ::= <T> '/' <H>
+        RULE_T_TIMES         =  3, // <T> ::= <T> '* ' <H>
+        RULE_T_DIV           =  4, // <T> ::= <T> '/ ' <H>
         RULE_T               =  5, // <T> ::= <H>
         RULE_H_10CARET       =  6, // <H> ::= '10^' <F>
         RULE_H_CARET         =  7, // <H> ::= <F> '^' <F>
@@ -171,7 +171,7 @@ namespace com.calitha.goldparser
                 return null;
 
                 case (int)SymbolConstants.SYMBOL_MINUS :
-                //'-'
+                //'- '
                 //todo: Create a new object that corresponds to the symbol
                 return null;
 
@@ -186,12 +186,12 @@ namespace com.calitha.goldparser
                 return null;
 
                 case (int)SymbolConstants.SYMBOL_TIMES :
-                //'*'
+                //'* '
                 //todo: Create a new object that corresponds to the symbol
                 return null;
 
                 case (int)SymbolConstants.SYMBOL_DIV :
-                //'/'
+                //'/ '
                 //todo: Create a new object that corresponds to the symbol
                 return null;
 
@@ -201,7 +201,7 @@ namespace com.calitha.goldparser
                 return null;
 
                 case (int)SymbolConstants.SYMBOL_PLUS :
-                //'+'
+                //'+ '
                 //todo: Create a new object that corresponds to the symbol
                 return null;
 
@@ -272,12 +272,12 @@ namespace com.calitha.goldparser
             switch (token.Rule.Id)
             {
                 case (int)RuleConstants.RULE_E_PLUS :
-                //<E> ::= <E> '+' <T>
+                //<E> ::= <E> '+ ' <T>
                 //todo: Create a new object using the stored user objects.
                 return null;
 
                 case (int)RuleConstants.RULE_E_MINUS :
-                //<E> ::= <E> '-' <T>
+                //<E> ::= <E> '- ' <T>
                 //todo: Create a new object using the stored user objects.
                 return null;
 
@@ -287,12 +287,12 @@ namespace com.calitha.goldparser
                 return null;
 
                 case (int)RuleConstants.RULE_T_TIMES :
-                //<T> ::= <T> '*' <H>
+                //<T> ::= <T> '* ' <H>
                 //todo: Create a new object using the stored user objects.
                 return null;
 
                 case (int)RuleConstants.RULE_T_DIV :
-                //<T> ::= <T> '/' <H>
+                //<T> ::= <T> '/ ' <H>
                 //todo: Create a new object using the stored user objects.
                 return null;
 

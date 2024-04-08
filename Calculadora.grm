@@ -12,7 +12,7 @@ NReal = '-'{Number}+'.'{Number}+
       
 "Start Symbol" = <E>
               
-<E> ::= <E> '+' <T> | <E> '-' <T> | <T>
-<T> ::= <T> '*' <H> | <T> '/' <H> | <H>
+<E> ::= <E> ' + ' <T> | <E> ' - ' <T> | <T>
+<T> ::= <T> ' * ' <H> | <T> ' / ' <H> | <H>
 <H> ::= '10^' <F> | <F> '^' <F> | <F>
 <F> ::= '(' <E> ')' | Entero | Real | NEntero | NReal           
