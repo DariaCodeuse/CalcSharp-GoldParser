@@ -1,0 +1,18 @@
+! Welcome to GOLD Parser Builder 5.2
+
+"Name" = 'Calculadora'
+"Author" = 'Equipo 3'
+"Version" = '1.3'
+"About" = 'Calculadora con operaciones aritmeticas basicas y 2 operaciones extras'
+        
+Entero = {Number}+
+Real = {Number}+'.'{Number}+
+NEntero = '-'{Number}+ 
+NReal = '-'{Number}+'.'{Number}+
+      
+"Start Symbol" = <E>
+              
+<E> ::= <E> '+' <T> | <E> '-' <T> | <T>
+<T> ::= <T> '*' <H> | <T> '/' <H> | <H>
+<H> ::= '10^' <F> | <F> '^' <F> | <F>
+<F> ::= '(' <E> ')' | Entero | Real | NEntero | NReal           
