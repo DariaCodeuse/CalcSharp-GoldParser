@@ -1,22 +1,36 @@
 # 🧮 CalcSharp-GoldParser
+Esta es una calculadora desarrollada en C# que utiliza análisis sintáctico (parsing) para evaluar expresiones matemáticas ingresadas por el usuario. La calculadora es capaz de manejar operaciones aritméticas básicas, incluyendo suma, resta, multiplicación, división y exponenciación.
 
-### Descripción:
-Este repositorio alberga una calculadora implementada en C# que realiza las cuatro operaciones aritméticas básicas (suma, resta, multiplicación y división), además de permitir cálculos de potencias, como resolver X^n o 10^n. La implementación utiliza Gold Parser Builder para definir y aplicar la gramática necesaria para interpretar estas expresiones matemáticas de manera precisa.
+## 🔵 Características
 
-#### 🔸 Características:
-- **Gramática Personalizada:** Utiliza Gold Parser Builder para definir una gramática específica que permite interpretar expresiones matemáticas incluyendo las operaciones básicas y cálculos de potencias.
+- Evaluación de expresiones matemáticas mediante análisis sintáctico.
+- Interfaz gráfica de usuario (GUI) simple y amigable.
+- Funcionalidad para almacenar y recuperar valores en memoria.
+- Manejo de operaciones con números enteros y decimales.
+- Soporte para paréntesis y operadores de precedencia.
 
-- **Operaciones Aritméticas Básicas:** La calculadora puede realizar suma (+), resta (-), multiplicación (*) y división (/) entre números.
+## 🔵 Requisitos del Sistema
 
-- **Cálculo de Potencias:** Permite calcular potencias, como X^n o 10^n, donde X y n son números ingresados por el usuario.
+- Sistema operativo Windows.
+- Microsoft .NET Framework o .NET Core instalado.
 
-- **Interfaz de Usuario Intuitiva:** Incluye una interfaz de usuario fácil de usar que permite al usuario ingresar expresiones matemáticas y ver los resultados de manera clara.
+## 🔵 Uso
 
-#### 🔸 Uso:
-1. Clona el repositorio en tu máquina local.
-2. Abre el proyecto en un entorno de desarrollo compatible con C# (como Visual Studio).
-3. Compila y ejecuta la aplicación.
-4. Ingresa expresiones matemáticas siguiendo la gramática definida:
-   - Para realizar operaciones aritméticas básicas, usa los operadores +, -, *, / entre números (por ejemplo, 5 + 3).
-   - Para calcular una potencia, usa el formato base^exponente o 10^exponente (por ejemplo, 2^3 para calcular 2^3).
-5. Observa los resultados obtenidos en la interfaz de usuario.
+1. **Descarga del Código**: Clona o descarga el repositorio a tu máquina local.
+2. **Compilación**: Abre el proyecto en Visual Studio y compílalo.
+3. **Ejecución**: Ejecuta la aplicación desde Visual Studio o directamente desde el archivo ejecutable.
+
+## 🔵 Funcionalidades Adicionales
+
+La calculadora incluye las siguientes funcionalidades adicionales:
+
+- Botón "M": Guarda el valor mostrado en pantalla en la memoria.
+- Botón "MR": Recupera el valor almacenado en memoria y lo muestra en pantalla.
+- Operación "10^": Permite calcular 10 elevado a un exponente ingresado.
+
+## 🔵 Contribuciones
+
+Las contribuciones son bienvenidas. Si encuentras algún problema o tienes alguna mejora, no dudes en abrir un "issue" o enviar un "pull request" al repositorio.
+
+## Autor
+- Nombre: [@dariaa37]
